@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="estiloformu.css">
+
+<body>
+
+<form class="form" onsubmit="return validated()">
+        <h2 class="form__title">Inicia Sesión</h2>
+        <p class="form__paragraph">¿Aún no tienes una cuenta? <a href="#" class="form__link">Entra aquí</a></p>
+
+        <div class="form__container">
+            <div class="form__group">
+                <input type="text" name="usuario" id="usuari" class="form__input" placeholder="usuario" autocomplete="off">
+                <input type="password" name="contraseña" id="contraseñ" class="form__input" placeholder="contraseña">
+                <input type="button" class="form__submit" value="iniciar Secion" id="boton" onclick="login()">
+            </div>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
